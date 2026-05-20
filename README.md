@@ -1,5 +1,4 @@
 # intercambiadore-de-calor-py-steamlit
-Aplicación interactiva desarrollada con Streamlit para el análisis y cálculo de intercambiadores de calor.
 Aplicación desarrollada en Python con Streamlit para el análisis de intercambiadores de calor.
 
 ## Características
