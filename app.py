@@ -58,6 +58,14 @@ if hidrocarburo == "Y":
         Cp_c = st.number_input("Ingresa el valor de Cp para la sustancia caliente: ")
         st.write("La temperatura media de la corriente fria es de: ", t_ref)
         Cp_f = st.number_input("Ingresa el valor de Cp para la sustancia fría: ")
+else:
+    T_ref = float((T1 + T2) / 2)
+    t_ref = float((t1 + t2) / 2)
+    st.write("Con la grafica de cp de liquidos y la temperatura media, encuentra los valores de los cp")
+    st.write("La temperatura media de la corriente caliente es de: ", T_ref)
+    Cp_c = st.number_input("Ingresa el valor de Cp para la sustancia caliente: ")
+    st.write("La temperatura media de la corriente fria es de: ", t_ref)
+    Cp_f = st.number_input("Ingresa el valor de Cp para la sustancia fría: ")
 
 #===========================
 st.header("Balance de materia")
