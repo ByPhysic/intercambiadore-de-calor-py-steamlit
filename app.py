@@ -131,18 +131,18 @@ st.write("ingresa los valores de las tuberias IPS (herramienta en excel)")
 
 #para tubo externo (a)
 st.write("Tubo externo (a)")
-Dnom = st.number_input("Ingresa el diametro nominal para tubo externo")
-DE = st.number_input("Ingresa el diametro externo para tubo externo")
-DI = st.number_input("Ingresa el diametro interno para tubo externo")
-AREA = st.number_input("Ingresa el area de la tuberia para tubo externo")
+Dnom = st.number_input("Ingresa el diametro nominal para tubo externo", format="%.4f")
+DE = st.number_input("Ingresa el diametro externo para tubo externo", format="%.4f")
+DI = st.number_input("Ingresa el diametro interno para tubo externo", format="%.4f")
+AREA = st.number_input("Ingresa el area de la tuberia para tubo externo", format="%.4f")
 
 #para tubo interno (p)
 st.write("Tubo interno (p)")
-dnom = st.number_input("Ingresa el diametro nominal para tubo interno")
-dE = st.number_input("Ingresa el diametro externo para tubo interno")
-dI = st.number_input("Ingresa el diametro interno para tubo interno")
-area = st.number_input("Ingresa el area de la tuberia para tubo interno")
-SL = st.number_input("Ingresa el espacio libre (SL)")
+dnom = st.number_input("Ingresa el diametro nominal para tubo interno", format="%.4f")
+dE = st.number_input("Ingresa el diametro externo para tubo interno", format="%.4f")
+dI = st.number_input("Ingresa el diametro interno para tubo interno", format="%.4f")
+area = st.number_input("Ingresa el area de la tuberia para tubo interno", format="%.4f")
+SL = st.number_input("Ingresa el espacio libre (SL)", format="%.4f")
 
 if m_c > m_f:
     m_mayor = 0
