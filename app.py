@@ -195,16 +195,16 @@ st.header("Viscosidades y valores de K")
 
 st.write("Ingresa las viscosidades de ambas sustancias a la temperatura de referencia en la grafica viscosidades de liquidos")
 st.write("Para el fluido en el tubo interno (p)", m_mayor)
-mu_p = st.number_input("Ingresa la viscosidad del fluido en el tubo interno (mu_p)")
+mu_p = st.number_input("Ingresa la viscosidad del fluido en el tubo interno (mu_p)", format="%.4f")
 st.write("Para el fluido en el anulo (a)", m_menor)
-mu_a = st.number_input("Ingresa la viscosidad del fluido en el anulo (mu_a)")
+mu_a = st.number_input("Ingresa la viscosidad del fluido en el anulo (mu_a)", format="%.4f")
 mu_p = mu_p * 2.42
 mu_a = mu_a * 2.42
 
 
 st.write("Para encontrar los valores para los K puedes obtenerlos interpolando en la tabla Conductividad termica para liquidos y si es un hidrocarburo desde la grafica")
-K_p = st.number_input("Ingresa el valor de K para el fluido en el tubo interno (K_p)")
-K_a = st.number_input("Ingresa el valor de K para el fluido en el anulo (K_a)")
+K_p = st.number_input("Ingresa el valor de K para el fluido en el tubo interno (K_p)", format="%.4f")
+K_a = st.number_input("Ingresa el valor de K para el fluido en el anulo (K_a)", format="%.4f")
 
 #==============================
 st.header("Valores de números adimencionales y valor de hi_a y hi_p")
