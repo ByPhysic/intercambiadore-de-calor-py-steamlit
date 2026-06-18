@@ -4,6 +4,7 @@ import numpy as np
 import streamlit as st
 import math as mt
 
+st.write("La temperatura debe estar en °C")
 T1 = st.number_input("Ingresa la temperatura caliente T1: ")
 T2 = st.number_input("Ingresa la temperatura caliente T2: ")
 t1 = st.number_input("Ingresa la temperatura fría t1: ")
